@@ -25,14 +25,15 @@
     </div>
     <div id="corpo-formulario">
         <h1>LOGIN</h1>
-        <form method="POST" action="../processar-login.php">
+        <form method="POST" action="../processaDadosBanco/processar-login.php">
             <div class="campo">
-                <input type="email" name="e-mail" placeholder="E-mail" required="">
+                <input type="email" name="email" placeholder="E-mail" required="">
                 <input type="password" name="senha" placeholder="Senha" required="">
             </div>
             <input type="checkbox" checked="checked" class="checkbox">
             <label id="lembrar-me">Lembrar-me</label><br>
             <input type="submit" value ="ENTRAR" id="botao-entrar">
+            
             <p id="cadastro">Não possui cadastro?</p>
             <a href="cadastro.php" class="link-formulario"><strong> Cadastre-se aqui</strong></a>
         </form>

@@ -26,7 +26,7 @@
 
     <div id="corpo-cadastro">
         <h1>CADASTRE-SE</h1>
-        <form method="POST" action="../processar-cadastro.php">
+        <form method="POST" action="../processaDadosBanco/processar-cadastro.php">
             <div id="campo-cadastro">
                 <input type="text" name="nome" placeholder="Nome Completo" require="required" >
                 <input type="email" name="email" placeholder="E-mail" required>
