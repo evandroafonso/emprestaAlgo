@@ -1,6 +1,6 @@
 <?php
 
-require_once("../conexaoBancoDados/databaseconnect.php");
+require_once("../conexaodatabase/databaseconnect.php");
 require("../classes/Usuario.php");
 
 $usuario = new Usuario();

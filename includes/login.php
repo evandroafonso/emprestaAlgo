@@ -25,7 +25,7 @@
     </div>
     <div id="corpo-formulario">
         <h1>LOGIN</h1>
-        <form method="POST" action="../processaDadosBanco/processar-login.php">
+        <form method="POST" action="../database/processadados/processar-login.php">
             <div class="campo">
                 <input type="email" name="email" placeholder="E-mail" required="">
                 <input type="password" name="senha" placeholder="Senha" required="">

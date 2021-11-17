@@ -2,7 +2,7 @@
 
 if(isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['senha']) && !empty($_POST['senha'])){
 
-    require("../conexaoBancoDados/databaseconnect.php");
+    require_once("../conexaodatabase/databaseconnect.php");
     require("../classes/Usuario.php");
 
     $usuario = new Usuario();
