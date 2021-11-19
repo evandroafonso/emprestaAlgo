@@ -15,17 +15,14 @@
 
 <body>
 
-    <div id="navbar">
+    <div id="navbar-login">
         <ul>
-            <li><a href="">inicio</a></li>
-            <li><a href="">News</a></li>
-            <li><a href="">Contact</a></li>
-            <li style="float: right"><a class="active" href="#about">About</a></li>
+            <h1>EMPRESTA ALGO</h1>
         </ul>
     </div>
     <div id="corpo-formulario">
         <h1>LOGIN</h1>
-        <form method="POST" action="../database/processadados/processar-login.php">
+        <form method="POST" action="../database/processar-login.php">
             <div class="campo">
                 <input type="email" name="email" placeholder="E-mail" required="">
                 <input type="password" name="senha" placeholder="Senha" required="">

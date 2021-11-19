@@ -7,7 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>página principal</h1>
-    <a href="../index.php">voltar para inicio</a>
+    <h1>Tabela empresta</h1>
 </body>
 </html>

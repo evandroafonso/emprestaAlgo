@@ -15,29 +15,26 @@
 
 <body>
 
-    <div id="navbar">
+    <div id="navbar-login">
         <ul>
-            <li><a href="../includes/login.php">Home</a></li>
-            <li><a href="">News</a></li>
-            <li><a href="">Contact</a></li>
-            <li style="float: right"><a class="active" href="#about">About</a></li>
+            <h1>EMPRESTA ALGO</h1>
         </ul>
     </div>
 
     <div id="corpo-cadastro">
         <h1>CADASTRE-SE</h1>
-        <form method="POST" action="../database/processadados/processar-cadastro.php">
+        <form method="POST" action="../database/processar-cadastro.php">
             <div id="campo-cadastro">
-                <input type="text" name="nome" placeholder="Nome Completo" require="required" >
+                <input type="text" name="nome" placeholder="Nome Completo" require="required">
                 <input type="email" name="email" placeholder="E-mail" required>
                 <input type="password" name="senha" placeholder="Senha" id="password" required>
                 <input type="password" name="confirmação-senha" placeholder="Confirme sua senha" id="confirm_password" required>
             </div>
-            <input type="submit" value="FINALIZAR CADASTRO" id="botao-entrar" ><a href="../includes/principal.php">
-            
+            <input type="submit" value="FINALIZAR CADASTRO" id="botao-entrar"><a href="../includes/principal.php">
+
         </form>
     </div>
 
-</body> 
+</body>
 
 </html>
