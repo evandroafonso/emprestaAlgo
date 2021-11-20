@@ -1,34 +1,111 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Lato', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
 
 body{
-    background-image: url("../assets/images/fundo-login.jpg");
-    background-position: 10%;
-    font-family: 'Lato', sans-serif;
+    background-color: #0e0333;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+
+.container{
+    max-width: auto;
+    margin: 180px;
+    padding: 0px, 30px, 0px, 30px;
+    display: grid;
+    grid-template-areas: 
+    "quadro-apresentacao corpo-formulario";
+    grid-gap: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#quadro-apresentacao{
+    max-width: 550px;
+    min-width: 300px;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    border-radius: 20px;
+    padding: 20px 10px 20px 10px;
+    box-shadow: 16px 35px 20px;
+    grid-area: "corpo-formulario";
 }
 
 #corpo-formulario{
-    background-color: rgb(255, 255, 255);    
-    border-radius: 50px 10px 50px 10px;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    border-radius: 20px;
     padding: 20px 5px 20px 5px;
-    width: 350px;
-    margin: 120px auto 0px auto;
+    max-width: 380px;
+    min-width: 380px;
     box-shadow: 16px 35px 20px;
-    position: relative;
+    grid-area: "quadro-apresentacao";
 }
 
-#corpo-formulario h1{
+@media (max-width: 1400px){
+    #corpo-formulario{
+        margin-left: auto;
+        margin-right: auto;
+        width: 6em
+    }
+    
+    .container{
+        margin: 10px;
+        grid-template-areas: 
+        "quadro-apresentacao corpo-formulario";
+        grid-gap: 100px;
+        margin: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1024px){
+    #corpo-formulario{
+        margin-left: auto;
+        margin-right: auto;
+        width: 6em
+    }
+    
+    .container{
+        margin: 10px;
+        grid-template-areas: 
+        "quadro-apresentacao"
+        "corpo-formulario";
+        grid-gap: 100px;
+        margin: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 540px){ 
+    #corpo-formulario{ 
+        margin-left: auto; 
+        margin-right: auto; 
+        width: 6em 
+    } 
+        
+    .container{ 
+        margin: 10px;
+        grid-template-areas: 
+        "quadro-apresentacao" "corpo-formulario"; 
+        grid-gap: 20px; 
+        margin: 20px; 
+        justify-content: center; 
+        align-items: center; 
+    } 
+}
+
+h1{
     text-align: center;
     padding: 20px;
     color: rgba(2, 2, 2, 0.938);
 }
 
 #corpo-formulario .campo input {
-    width: 330px;
+    width: 95%;
     padding: 10px;
     display: block;
     height: 50px;
@@ -77,10 +154,9 @@ body{
 }
 
 #lembrar-me{
-    position:absolute;
-    left:40px;
-    bottom: 142px;
-    margin-right:20px;
+    position: relative;
+    left:10px;
+    bottom: 10px;
     font-size: 15px;
 }
 
