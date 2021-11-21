@@ -14,10 +14,20 @@
 </head>
 
 <body>
+
+    <header>
+        <li class="titulo-menu"><a href="../includes/login.php"><strong>EMPRESTA ALGO</strong></a></li>
+        <ul class="menu">
+            <li><a href="#"><strong>Como Funciona?</strong></a></li>
+            <li><a href="#"><strong>Quem Somos?</strong></a></li>
+            <li><a href="#"><strong>Contato</strong></a></li>
+        </ul>
+    </header>
+
     <section class="container">
         <div id="quadro-apresentacao">
             <h1>E ai, bora Emprestar Algo?</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 voluptas alias. Nam deserunt in voluptatem. Amet eum debitis
                 animi consequuntur numquam ea odit et omnis! Ipsam ratione earum magni!</p>
         </div>

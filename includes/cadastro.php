@@ -15,13 +15,15 @@
 
 <body>
 
-    <div id="navbar-login">
-        <ul>
-            <h1>EMPRESTA ALGO</h1>
+    <header>
+        <li><a href="../includes/login.php"><button>VOLTAR PARA O LOGIN</button></a></li>
+        <ul class="menu">
+            <li><a href="#"><strong>Como Funciona?</strong></a></li>
+            <li><a href="#"><strong>Quem Somos?</strong></a></li>
+            <li><a href="#"><strong>Contato</strong></a></li>
         </ul>
-    </div>
+    </header>
 
-    <div id="corpo-cadastro">
         <h1>CADASTRE-SE</h1>
         <form method="POST" action="../database/processar-cadastro.php">
             <div id="campo-cadastro">

@@ -13,26 +13,26 @@
     <title>Empresta Algo - Main</title>
 </head>
 
-<body id="body-main">
-
-    <div id="navbar">
-        <ul>
-            <li style="float: left"><a href="../includes/main.php"><strong>Empresta Algo</strong></a></li>
-            <li style="float: right"><a href="">Início</a></li>
-            <li style="float: right"><a href="">News</a></li>
-            <li style="float: right"><a href="">Contact</a></li>
-            <li style="float: right"><a href="#about">About</a></li>
+<body>
+    <header>
+        <li class="titulo-menu"><a href="../includes/main.php"><strong>EMPRESTA ALGO</strong></a></li>
+        <ul class="menu">
+            <li><a href="#"><strong>Como Funciona?</strong></a></li>
+            <li><a href="#"><strong>Quem Somos?</strong></a></li>
+            <li><a href="#"><strong>Contato</strong></a></li>
         </ul>
-    </div>
-
-    <div id="titulo-main">
-        <h2>Empreste algo, agora!</h2>
-        <p><strong>Clique no botão abaixo e faça parte desta comunidade e compartilhe algo também!</strong></p>
-    </div>
-
-    <button id="botao-empresta"><a href="../includes/empresta.php">Emprestar algo</a></button><br>
-    <button id="botao-devolve"><a href="../includes/devolve.php">Devolver algo</a></button>
-
+    </header>
+    <section class="container-main">
+        <div id="titulo-main">
+            <h2>Empreste algo, agora!</h2>
+            <p><strong>Clique no botão abaixo e faça parte desta comunidade e compartilhe algo também!</strong></p>
+        </div>
+        <form method="GET" action="../includes/empresta.php">
+            <input type="submit" value="EMPRESTE" id="botao-empresta">
+        <form method="GET" action="../includes/devolve.php">
+            <input type="submit" value="DEVOLVA" id="botao-devolve">
+        </form>
+    </section>
 
 
 
