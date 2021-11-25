@@ -16,7 +16,7 @@
 <body>
 
     <header>
-        <li><a href="../includes/login.php"><button>VOLTAR PARA O LOGIN</button></a></li>
+        <li><a href="../includes/main.php"><button>VOLTAR PARA TELA PRINCIPAL</button></a></li>
         <ul class="menu">
             <li><a href="#"><strong>Como Funciona?</strong></a></li>
             <li><a href="#"><strong>Quem Somos?</strong></a></li>
@@ -25,15 +25,15 @@
     </header>
 
     <div id="corpo-cadastro">
-        <h1>CADASTRE-SE</h1>
-        <form method="POST" action="../database/processar-cadastro.php">
+        <h1>Cadastre um item</h1>
+        <form method="POST" action="../database/processar-cadastro_empresta.php">
             <div id="campo-cadastro">
-                <input type="text" name="nome" placeholder="Nome Completo" require="required">
-                <input type="email" name="email" placeholder="E-mail" required>
-                <input type="password" name="senha" placeholder="Senha" id="password" required>
-                <input type="password" name="confirmação-senha" placeholder="Confirme sua senha" id="confirm_password" required>
+                <input type="text" name="nome" placeholder="Nome do item" require="required">
+                <input type="text" name="descricao" placeholder="Descrição do item" required>
+                <input type="text" name="categoria" placeholder="Categoria do item" required>
+                <input type="number" name="estoque" placeholder="Quantidade disponível" required>
             </div>
-            <input type="submit" value="FINALIZAR CADASTRO" id="botao-entrar"><a href="../includes/principal.php">
+            <input type="submit" value="FINALIZAR CADASTRO DO ITEM" id="botao-entrar"><a href="../includes/principal.php">
         </form>
     </div>
 

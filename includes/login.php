@@ -43,7 +43,10 @@
                 <input type="checkbox" checked="checked" class="checkbox">
                 <label id="lembrar-me">Lembrar-me</label><br>
                 <input type="submit" value="ENTRAR" id="botao-entrar">
-
+                <?php
+                if(isset($_GET['erro'])){
+                    echo '<p style="text-align:center;color:red"><br>Usuário e/ou senha incorreto(s), tente novamente.</p>';
+                }?>
                 <p id="cadastro">Não possui cadastro?</p>
                 <a href="cadastro.php" class="link-formulario"><strong> Cadastre-se aqui</strong></a>
             </form>

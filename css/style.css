@@ -65,7 +65,7 @@ header{
     min-width: 300px;
     background-color: #ffffff;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 20px 10px 20px 10px;
     box-shadow: 16px 35px 20px;
     grid-area: "corpo-formulario";
@@ -74,7 +74,7 @@ header{
 #corpo-formulario{
     background-color: #ffffff;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 20px 5px 20px 5px;
     max-width: 380px;
     min-width: 380px;
@@ -208,8 +208,9 @@ h1{
 }
 
 #corpo-cadastro{
-    background-color: rgb(255, 255, 255);    
-    border-radius: 20px;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    border-radius: 15px;
     max-width: 1000px;
     min-width: 300px;
     margin: 100px auto 0px auto;
@@ -305,3 +306,76 @@ h1{
     cursor: pointer;
     border-radius: 10px;
 }
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin:auto; 
+
+  }
+
+  #tabela-cabeçalho{
+    background-color: #555050;
+}
+
+#tabela-cabeçalho th{
+    color: #dddddd;
+    font-size: 20px;
+  }
+  
+td, th {
+    border: 2px solid #dddddd;
+    color: rgb(26, 24, 24);
+    text-align: center;
+    padding: 8px;
+
+  }
+
+  tr:nth-child(even) {
+    background-color: #fcf8f8;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #dad4d4;
+  }
+  #titulo-empresta {
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    border-radius: 15px;
+    max-width: 1000px;
+    min-width: 300px;
+    height: 80px;
+    padding: 2px;
+    text-align: jus;
+    margin: 50px auto 0px auto;
+    box-shadow: 16px 35px 20px;
+    position: relative;
+}
+
+  table {
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    border-radius: 15px;
+    padding: 20px 5px 20px 5px;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 9.8%;
+    margin-bottom: 3%;
+    box-shadow: 16px 35px 20px;
+  }
+  
+  #botao-novo-item{
+      background-color: #ffffff;
+      text-decoration: none;
+      width: 170px;
+      height: 30px;
+      border-radius: 10px;
+      font-weight: bold;
+      outline: none;
+      cursor: pointer;
+      display: block;
+      text-decoration: underline;
+      margin: 0 auto;
+      margin-bottom: 10px; 
+  }
+
