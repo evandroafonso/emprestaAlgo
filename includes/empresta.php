@@ -30,7 +30,7 @@
 
     <?php
     require_once("../database/conexaodatabase/databaseconnect.php");
-    $consulta = ("SELECT id, nome, descricao, categoria, estoque FROM empresta ORDER BY 'id' DESC");
+    $consulta = ("SELECT id, nome, descricao, categoria, estoque, emprestados FROM empresta ORDER BY 'id' DESC");
     ?>
 
     <table>
@@ -40,6 +40,7 @@
             <th>Descrição</th>
             <th>Categoria</th>
             <th>Estoque</th>
+            <th>Emprestados</th>
             <th>Disponível</th>
             <th>Emprestar</th>
         </tr>
@@ -54,47 +55,11 @@
                     <td><?php echo $row['descricao']; ?></td>
                     <td><?php echo $row['categoria']; ?></td>
                     <td><?php echo $row['estoque']; ?></td>
-                    <td><input type="number" name="quantidade_disponivel"></td>
+                    <td><?php echo $row['emprestados']; ?></td>
+                    <td><input type="number" name="emprestados"></td>
                     <td><input type="submit" onclick="inserir_registo('<?php echo $row['id']?>')" value="EMPRESTAR" id="botao-emprestar" name="emprestar"><a href="../includes/empresta.php?id=<?php echo $value['id']; ?>"></td>
                 </tr>";
             </form>
-            <script>
-                function inserir_registo() {
-
-                    //dados a enviar, vai buscar os valores dos campos que queremos enviar para a BD
-                    var dadosajax = {
-                        'subject': $("#subject").val()
-                    };
-                    pageurl = '../database/processar-empresta.php';
-                    $.ajax({
-
-                        //url da pagina
-                        url: pageurl,
-                        //parametros a passar
-                        data: dadosajax,
-                        //tipo: POST ou GET
-                        type: 'POST',
-                        //cache
-                        cache: false,
-                        error: function() {
-                            alert('Erro: Atualizar Registo!!');
-                        },
-                        //retorna o resultado da pagina para onde enviamos os dados
-                        success: function(result) {
-                            //se foi inserido com sucesso
-                            if ($.trim(result) == '1') {
-                                alert("O seu registo foi atualizado com sucesso!");
-                                window.location.reload();
-                            }
-                            //se foi um erro
-                            else {
-                                alert("Ocorreu um erro ao atualizar o seu registo!");
-                            }
-
-                        }
-                    });
-                }
-            </script>
 
         <?php } ?>
     </table>;

@@ -5,6 +5,6 @@ require("../classes/Itens.php");
 
 $itens = new Itens();
 
-$disponivel = $_POST['quantidade_disponivel'];
+$disponivel = $_POST['emprestados'];
 
 $itens->escolhe_itens($disponivel);
