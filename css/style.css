@@ -53,7 +53,7 @@ header{
     margin: 180px;
     padding: 0px, 30px, 0px, 30px;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "quadro-apresentacao corpo-formulario";
     grid-gap: 200px;
     justify-content: center;
@@ -88,10 +88,10 @@ header{
         margin-right: auto;
         width: 6em
     }
-    
+
     .container{
         margin: 10px;
-        grid-template-areas: 
+        grid-template-areas:
         "quadro-apresentacao corpo-formulario";
         grid-gap: 100px;
         margin: 100px;
@@ -106,10 +106,10 @@ header{
         margin-right: auto;
         width: 6em
     }
-    
+
     .container{
         margin: 10px;
-        grid-template-areas: 
+        grid-template-areas:
         "quadro-apresentacao"
         "corpo-formulario";
         grid-gap: 100px;
@@ -119,22 +119,22 @@ header{
     }
 }
 
-@media (max-width: 540px){ 
-    #corpo-formulario{ 
-        margin-left: auto; 
-        margin-right: auto; 
-        width: 6em 
-    } 
-        
-    .container{ 
+@media (max-width: 540px){
+    #corpo-formulario{
+        margin-left: auto;
+        margin-right: auto;
+        width: 6em
+    }
+
+    .container{
         margin: 10px;
-        grid-template-areas: 
-        "quadro-apresentacao" "corpo-formulario"; 
-        grid-gap: 20px; 
-        margin: 20px; 
-        justify-content: center; 
-        align-items: center; 
-    } 
+        grid-template-areas:
+        "quadro-apresentacao" "corpo-formulario";
+        grid-gap: 20px;
+        margin: 20px;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 h1{
@@ -221,11 +221,11 @@ h1{
     grid-area: corpo-cadastro;
 }
 
-@media (max-width: 1000px){ 
-    #corpo-cadastro{ 
-        margin: 80px 10px auto 20px; 
+@media (max-width: 1000px){
+    #corpo-cadastro{
+        margin: 80px 10px auto 20px;
 
-    } 
+    }
 }
 
 #corpo-cadastro h1{
@@ -255,7 +255,7 @@ h1{
     margin: 80px;
     padding: 0px, 30px, 0px, 30px;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "quadro-apresentacao"
     "corpo-formulario";
     grid-gap: 0px;
@@ -266,9 +266,9 @@ h1{
 #titulo-main h2{
     text-align: center;
     margin: 20px;
-    color: #fff;
+    color: rgb(253, 253, 253);
     font-size: 32pt;
-    
+
 }
 #titulo-main p {
     text-align: center;
@@ -310,7 +310,7 @@ h1{
 table {
     border-collapse: collapse;
     width: 80%;
-    margin:auto; 
+    margin:auto;
 
   }
 
@@ -322,7 +322,7 @@ table {
     color: #dddddd;
     font-size: 20px;
   }
-  
+
 td, th {
     border: 2px solid #dddddd;
     color: rgb(26, 24, 24);
@@ -363,7 +363,7 @@ td, th {
     margin-bottom: 3%;
     box-shadow: 16px 35px 20px;
   }
-  
+
   #botao-novo-item{
       background-color: #ffffff;
       text-decoration: none;
@@ -376,6 +376,6 @@ td, th {
       display: block;
       text-decoration: underline;
       margin: 0 auto;
-      margin-bottom: 10px; 
+      margin-bottom: 10px;
   }
 

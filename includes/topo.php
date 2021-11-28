@@ -21,5 +21,6 @@
             <li><a href="#"><strong>Como Funciona?</strong></a></li>
             <li><a href="#"><strong>Quem Somos?</strong></a></li>
             <li><a href="#"><strong>Contato</strong></a></li>
+            <li><a href="../includes/processar-logout-usuario.php"><strong>Sair</strong></a></li>
         </ul>
     </header>
