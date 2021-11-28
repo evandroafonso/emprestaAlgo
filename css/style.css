@@ -53,7 +53,7 @@ header{
     margin: 180px;
     padding: 0px, 30px, 0px, 30px;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "quadro-apresentacao corpo-formulario";
     grid-gap: 200px;
     justify-content: center;
@@ -75,9 +75,9 @@ header{
     background-color: #ffffff;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
     border-radius: 15px;
-    padding: 20px 5px 20px 5px;
-    max-width: 380px;
-    min-width: 380px;
+    padding: 30px 10px 30px 10px;
+    max-width: 450px;
+    min-width: 400px;
     box-shadow: 16px 35px 20px;
     grid-area: "quadro-apresentacao";
 }
@@ -88,10 +88,10 @@ header{
         margin-right: auto;
         width: 6em
     }
-    
+
     .container{
         margin: 10px;
-        grid-template-areas: 
+        grid-template-areas:
         "quadro-apresentacao corpo-formulario";
         grid-gap: 100px;
         margin: 100px;
@@ -106,10 +106,10 @@ header{
         margin-right: auto;
         width: 6em
     }
-    
+
     .container{
         margin: 10px;
-        grid-template-areas: 
+        grid-template-areas:
         "quadro-apresentacao"
         "corpo-formulario";
         grid-gap: 100px;
@@ -119,22 +119,22 @@ header{
     }
 }
 
-@media (max-width: 540px){ 
-    #corpo-formulario{ 
-        margin-left: auto; 
-        margin-right: auto; 
-        width: 6em 
-    } 
-        
-    .container{ 
+@media (max-width: 540px){
+    #corpo-formulario{
+        margin-left: auto;
+        margin-right: auto;
+        width: 6em
+    }
+
+    .container{
         margin: 10px;
-        grid-template-areas: 
-        "quadro-apresentacao" "corpo-formulario"; 
-        grid-gap: 20px; 
-        margin: 20px; 
-        justify-content: center; 
-        align-items: center; 
-    } 
+        grid-template-areas:
+        "quadro-apresentacao" "corpo-formulario";
+        grid-gap: 20px;
+        margin: 20px;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 h1{
@@ -221,11 +221,11 @@ h1{
     grid-area: corpo-cadastro;
 }
 
-@media (max-width: 1000px){ 
-    #corpo-cadastro{ 
-        margin: 80px 10px auto 20px; 
+@media (max-width: 1000px){
+    #corpo-cadastro{
+        margin: 80px 10px auto 20px;
 
-    } 
+    }
 }
 
 #corpo-cadastro h1{
@@ -252,10 +252,10 @@ h1{
 
 .container-main{
     max-width: auto;
-    margin: 80px;
+    margin-top: 30px;
     padding: 0px, 30px, 0px, 30px;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "quadro-apresentacao"
     "corpo-formulario";
     grid-gap: 0px;
@@ -263,14 +263,20 @@ h1{
     align-items: center;
 }
 
-#titulo-main h2{
+.titulo-main h2{
     text-align: center;
     margin: 20px;
-    color: #fff;
+    color: rgb(253, 253, 253);
     font-size: 32pt;
-    
 }
-#titulo-main p {
+
+.titulo-main h3{
+    text-align: center;
+    margin: 20px;
+    color: rgb(253, 253, 253);
+    font-size: 24pt;
+}
+.titulo-main p {
     text-align: center;
     margin: 20px;
     color: #fff;
@@ -278,40 +284,45 @@ h1{
 }
 
 #botao-empresta{
-    width: 100%;
+    position:relative;
+    text-align:center;
+    left: 9%;
+    width: 30%;
     height: 80px;
     margin: 60px 20px 40px 20px;
     border: none;
+    text-decoration: none;
     font-weight: bold;
     outline: none;
-    color: rgb(5, 80, 15);
-    font-size: 20px;
-    background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    background: linear-gradient(to left, rgb(131, 54, 167), rgb(8, 0, 19));
     padding: 5px;
     cursor: pointer;
     border-radius: 10px;
+
 }
 
 #botao-devolve{
-    width: 100%;
+    position:relative;
+    left: 27%;
+    width: 30%;
     height: 80px;
     margin: 20px;
     border: none;
     font-weight: bold;
     outline: none;
-    color: rgb(255, 16, 16);
-    font-size: 20px;
-    background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    background: linear-gradient(to right, rgb(199, 38, 38), rgb(29, 1, 1));;
     padding: 5px;
+    text-decoration: none;
     cursor: pointer;
     border-radius: 10px;
 }
 
 table {
     border-collapse: collapse;
-    width: 80%;
-    margin:auto; 
-
   }
 
   #tabela-cabeçalho{
@@ -322,7 +333,7 @@ table {
     color: #dddddd;
     font-size: 20px;
   }
-  
+
 td, th {
     border: 2px solid #dddddd;
     color: rgb(26, 24, 24);
@@ -363,7 +374,7 @@ td, th {
     margin-bottom: 3%;
     box-shadow: 16px 35px 20px;
   }
-  
+
   #botao-novo-item{
       background-color: #ffffff;
       text-decoration: none;
@@ -376,6 +387,38 @@ td, th {
       display: block;
       text-decoration: underline;
       margin: 0 auto;
-      margin-bottom: 10px; 
+      margin-bottom: 10px;
   }
 
+ .atualiza-cadastro-item{
+
+    margin: 30px 20px 40px 20px;
+    font-weight: bold;
+    color: rgb(38, 38, 61);
+    font-size: 20px;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
+    padding: 5px;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+
+  .voltar-empresta-devolve{
+
+    font-weight: bold;
+    color: rgb(35, 35, 61);
+    font-size: 20px;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
+    padding: 5px;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 100px;
+    margin-top: 50px;
+    position: absolute;
+    top: 3%;
+  }

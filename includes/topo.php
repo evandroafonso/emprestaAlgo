@@ -16,10 +16,11 @@
 <body>
 
     <header>
-        <li class="titulo-menu"><a href="../includes/empresta.php"><strong>EMPRESTA ALGO</strong></a></li>
+        <li class="titulo-menu"><a href="../pages/principal.php"><strong>EMPRESTA ALGO</strong></a></li>
         <ul class="menu">
             <li><a href="#"><strong>Como Funciona?</strong></a></li>
             <li><a href="#"><strong>Quem Somos?</strong></a></li>
             <li><a href="#"><strong>Contato</strong></a></li>
+            <li><a href="../includes/processar-logout-usuario.php"><strong>Sair</strong></a></li>
         </ul>
     </header>

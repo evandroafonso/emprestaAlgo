@@ -1,7 +1,7 @@
 <?php
-require_once("../database/conexaodatabase/databaseconnect.php");
-include("../includes/topo.php")
-?>x
+include("../includes/topo.php");
+include("../conexaodatabase/conexaodatabase.php");
+?>
 
 <section class="container">
     <div id="quadro-apresentacao">
@@ -13,7 +13,7 @@ include("../includes/topo.php")
 
     <div id="corpo-formulario">
         <h1>LOGIN</h1>
-        <form method="POST" action="../database/processar-login.php">
+        <form method="POST" action="../includes/processar-login-usuario.php">
             <div class="campo">
                 <input type="email" name="email" placeholder="E-mail" required="">
                 <input type="password" name="senha" placeholder="Senha" required="">
@@ -27,7 +27,7 @@ include("../includes/topo.php")
                 echo '<p style="text-align:center;color:red"><br>Usuário e/ou senha incorreto(s), tente novamente.</p>';
             } ?>
             <p id="cadastro">Não possui cadastro?</p>
-            <a href="cadastro.php" class="link-formulario"><strong> Cadastre-se aqui</strong></a>
+            <a href="../pages/cadastro-usuario.php" class="link-formulario"><strong> Cadastre-se aqui</strong></a>
         </form>
     </div>
 </section>

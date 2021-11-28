@@ -15,11 +15,21 @@
 
 <body>
 
+    <?php
+    if (isset($_GET['autentica'])) {
+        echo '<p style="text-align:center;color:red">Você não tem permissão de acesso para a página desejada.</p>';
+    }
 
-    <a href="../frontend/includes/login.php"> clique aqui</a>
-  
+    ?>
+    <br />
+    <h1>
+        <background-color:></background-color:>
+        <a id="botao-entrar" href="../frontend/pages/login-usuario.php"> Clique aqui e faça seu login</a>
+    </h1>
 
-    <script src="scripts/main.js"></script>
+
+
+
 </body>
 
 </html>
