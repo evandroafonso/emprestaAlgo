@@ -11,19 +11,9 @@ if (isset($_POST['update'])) {
     $status = $_POST['status'];
     $emprestados = $_POST['emprestados'];
 
-
-    echo "  ESTOQUE $estoque   ";
-    echo "  EMPRESTADOS: $emprestados   ";
-
-
-    if ($estoque >= 0) {
-
-        echo "entrou no id";
-
+    if ($estoque > 0) {
         $quantidadeAtual = $emprestados + 1;
         $estoque = $estoque - 1;
-
-        echo "$quantidadeAtual";
 
         $query = "UPDATE item SET
             estoque = '$estoque',
@@ -31,11 +21,8 @@ if (isset($_POST['update'])) {
             WHERE
             id = '$id'";
 
-
-
         $resposta = mysqli_query($conexao, $query);
         if ($resposta) {
-            echo 'Dados atualizados com sucesso';
         } else {
             echo 'Erro ao atualizar';
         }

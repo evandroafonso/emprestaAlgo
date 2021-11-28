@@ -3,10 +3,11 @@ include("../includes/topo.php");
 require("../includes/autentica-usuario.php");
 ?>
 
-<!--
 <div id="titulo-empresta">
     <h1>Lista de itens disponíveis para empréstimo</h1>
-</div>-->
+
+</div>
+<a href="../pages/principal.php" class="voltar-empresta-devolve">Voltar para a página principal</a>
 
 <?php
 include("../conexaodatabase/conexaodatabase.php");

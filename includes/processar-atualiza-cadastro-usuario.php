@@ -1,20 +1,26 @@
 <?php
 
 include("../conexaodatabase/conexaodatabase.php");
+include("../pages/atualiza-cadastro-usuario.php");
 
-$sql = "UPDATE cadastro SET
+if (isset($_POST['update'])) {
+
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+
+$query = "UPDATE cadastro SET
                 nome = '$nome',
                 email = '$email',
                 senha = '$senha'
             WHERE
                 id = '$id'";
 
-$resposta = mysqli_query($conexao, $sql);
+$resposta = mysqli_query($conexao, $query);
 
 //Se atualizou com sucesso
 if ($resposta) {
-
-    header("Location: ../pages/atualiza-cadastro-usuario.php");
 } else {
     echo "ERRO AO ATUALIZAR!";
+}
 }

@@ -75,9 +75,9 @@ header{
     background-color: #ffffff;
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
     border-radius: 15px;
-    padding: 20px 5px 20px 5px;
-    max-width: 380px;
-    min-width: 380px;
+    padding: 30px 10px 30px 10px;
+    max-width: 450px;
+    min-width: 400px;
     box-shadow: 16px 35px 20px;
     grid-area: "quadro-apresentacao";
 }
@@ -252,7 +252,7 @@ h1{
 
 .container-main{
     max-width: auto;
-    margin: 80px;
+    margin-top: 30px;
     padding: 0px, 30px, 0px, 30px;
     display: grid;
     grid-template-areas:
@@ -263,14 +263,20 @@ h1{
     align-items: center;
 }
 
-#titulo-main h2{
+.titulo-main h2{
     text-align: center;
     margin: 20px;
     color: rgb(253, 253, 253);
     font-size: 32pt;
-
 }
-#titulo-main p {
+
+.titulo-main h3{
+    text-align: center;
+    margin: 20px;
+    color: rgb(253, 253, 253);
+    font-size: 24pt;
+}
+.titulo-main p {
     text-align: center;
     margin: 20px;
     color: #fff;
@@ -278,40 +284,45 @@ h1{
 }
 
 #botao-empresta{
-    width: 100%;
+    position:relative;
+    text-align:center;
+    left: 9%;
+    width: 30%;
     height: 80px;
     margin: 60px 20px 40px 20px;
     border: none;
+    text-decoration: none;
     font-weight: bold;
     outline: none;
-    color: rgb(5, 80, 15);
-    font-size: 20px;
-    background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    background: linear-gradient(to left, rgb(131, 54, 167), rgb(8, 0, 19));
     padding: 5px;
     cursor: pointer;
     border-radius: 10px;
+
 }
 
 #botao-devolve{
-    width: 100%;
+    position:relative;
+    left: 27%;
+    width: 30%;
     height: 80px;
     margin: 20px;
     border: none;
     font-weight: bold;
     outline: none;
-    color: rgb(255, 16, 16);
-    font-size: 20px;
-    background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    background: linear-gradient(to right, rgb(199, 38, 38), rgb(29, 1, 1));;
     padding: 5px;
+    text-decoration: none;
     cursor: pointer;
     border-radius: 10px;
 }
 
 table {
     border-collapse: collapse;
-    width: 80%;
-    margin:auto;
-
   }
 
   #tabela-cabeçalho{
@@ -379,3 +390,35 @@ td, th {
       margin-bottom: 10px;
   }
 
+ .atualiza-cadastro-item{
+
+    margin: 30px 20px 40px 20px;
+    font-weight: bold;
+    color: rgb(38, 38, 61);
+    font-size: 20px;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
+    padding: 5px;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+
+  .voltar-empresta-devolve{
+
+    font-weight: bold;
+    color: rgb(35, 35, 61);
+    font-size: 20px;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
+    padding: 5px;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 100px;
+    margin-top: 50px;
+    position: absolute;
+    top: 3%;
+  }
