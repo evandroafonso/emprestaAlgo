@@ -11,9 +11,11 @@ $sql = "INSERT INTO item (nome, descricao, categoria, estoque) VALUES ('$nome', 
 
 $resposta = mysqli_query($conexao, $sql);
 
+
+
 if($resposta){
     header('Location: ../pages/principal.php');
 }
 else{
-    echo "ERRO AO INSERIR: $sql";
+
 }

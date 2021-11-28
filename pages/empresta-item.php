@@ -3,13 +3,14 @@ include("../includes/topo.php");
 require("../includes/autentica-usuario.php");
 ?>
 
-
+<!--
 <div id="titulo-empresta">
     <h1>Lista de itens disponíveis para empréstimo</h1>
-</div>
+</div>-->
 
 <?php
-    include("../conexaodatabase/conexaodatabase.php");
+include("../conexaodatabase/conexaodatabase.php");
+
 echo "
 <table>
     <tr>
@@ -23,31 +24,40 @@ echo "
         <th>Emprestar</th>
     </tr>";
 
-    $sql = ("SELECT id, nome, descricao, categoria, estoque, situacao FROM item ORDER BY 'id' DESC");
+$sqlSelect = ("SELECT id, nome, descricao, categoria, estoque, situacao, emprestados FROM item ORDER BY 'id' DESC");
 
-    $consulta = mysqli_query($conexao, $sql);
-    while($row = mysqli_fetch_assoc($consulta)){
+$consultaSelect = mysqli_query($conexao, $sqlSelect);
+while ($rowSelect = mysqli_fetch_assoc($consultaSelect)) {
 
-        if ($row['estoque'] >= 0){
-            if ($row['situacao'] == 0){
-                $status = 'disponível';
-            }else{
-                $status = 'indisponível';
-            }
+    $idSelect = $rowSelect['id'];
+    $estoqueSelect = $rowSelect['estoque'];
+    $statusSelect = $rowSelect['situacao'];
+    $emprestadosSelect = $rowSelect['emprestados'];
+
+    if ($estoqueSelect >= 0) {
+        if ($statusSelect == 0) {
+            $statusSelect = 'disponível';
+        } else {
+            $statusSelect = 'indisponível';
         }
+    }
 
-        if ($row['estoque'] > 0){
+    if ($estoqueSelect > 0) {
+
 ?>
-            <form method="POST" action="../includes/processar-empresta-item.php">
+        <form method="POST" action="../includes/processar-empresta-item.php">
             <tr>
-                <td><input type="hidden" name="subject" id="subject" value="<?php echo $row['id'] ?>"></td>
-                <td><?php echo $row['nome']; ?></td>
-                <td><?php echo $row['descricao']; ?></td>
-                <td><?php echo $row['categoria']; ?></td>
-                <td><?php echo $row['estoque']; ?></td>
-                <td><?php echo $status; ?></td>
-                <td><input type="number" name="quantidade"></td>
-                <td><input type="submit" <?php echo $row['id'] ?> value="EMPRESTAR" id="botao-emprestar" name="emprestar"><a href="../pages/empresta-item.php?id=<?php echo $value['id']; ?>"></td>
+                <td><input type="hidden" name="id" id="subject" value="<?php echo $rowSelect['id'] ?>"></td>
+                <td><?php echo $rowSelect['nome']; ?></td>
+                <td><?php echo $rowSelect['descricao']; ?></td>
+                <td><?php echo $rowSelect['categoria']; ?></td>
+                <td><input type="hidden" name="estoque" value="<?php echo $rowSelect['estoque']; ?>"><?php echo $estoqueSelect; ?></td>
+                <td><input type="hidden" name="status"><?php echo $statusSelect; ?></td>
+                <td><input type="hidden" name="emprestados" value="<?php echo $rowSelect['emprestados']; ?>"><?php echo $emprestadosSelect; ?></td>
+                <td><input type="submit" <?php echo $rowSelect['id'] ?> value="EMPRESTAR" id="botao-emprestar" name="update"><a href="../pages/empresta-item.php"></td>
             </tr>
         </form>
-        <?php } }?>
+<?php
+
+    }
+} ?>

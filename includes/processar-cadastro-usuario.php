@@ -8,6 +8,6 @@ include("../conexaodatabase/conexaodatabase.php");
 
 $sql = "INSERT INTO cadastro (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
 
-$resposta = mysqli_query($conexao, $id);
+$resposta = mysqli_query($conexao, $sql);
 
 header('Location: ../pages/login-usuario.php');

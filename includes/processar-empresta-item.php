@@ -1,23 +1,44 @@
 <?php
 
-include("../includes/empresta.php");
+include("../conexaodatabase/conexaodatabase.php");
+include("../pages/empresta-item.php");
+
+if (isset($_POST['update'])) {
+
+    $id = $_POST['id'];
+    $idSelect = $_POST['id'];
+    $estoque = $_POST['estoque'];
+    $status = $_POST['status'];
+    $emprestados = $_POST['emprestados'];
+
+
+    echo "  ESTOQUE $estoque   ";
+    echo "  EMPRESTADOS: $emprestados   ";
+
+
+    if ($estoque >= 0) {
+
+        echo "entrou no id";
+
+        $quantidadeAtual = $emprestados + 1;
+        $estoque = $estoque - 1;
+
+        echo "$quantidadeAtual";
+
+        $query = "UPDATE item SET
+            estoque = '$estoque',
+            emprestados = '$quantidadeAtual'
+            WHERE
+            id = '$id'";
 
 
 
-$itens = new Itens();
-
-$disponivel = $_POST['emprestados'];
-
-$itens->escolhe_itens($disponivel);
-
-
-
-$id = $_REQUEST['subject'];
-
-$consulta = $pdo->prepare("UPDATE empresta SET emprestados = ? WHERE id = '$id'");
-
-if ($consulta->execute([$disponivel])) {
-    header("Location: ../includes/empresta.php");
-} else {
-    echo "Erro de conexão com o banco de dados, por favor, tente novamente.";
+        $resposta = mysqli_query($conexao, $query);
+        if ($resposta) {
+            echo 'Dados atualizados com sucesso';
+        } else {
+            echo 'Erro ao atualizar';
+        }
+    } else {
+    }
 }
