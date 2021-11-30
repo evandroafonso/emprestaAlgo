@@ -19,7 +19,6 @@ echo "
         <th>Nome</th>
         <th>Descrição</th>
         <th>Categoria</th>
-        <th>Quantidade Devolvida</th>
         <th>Quantidade à devolver</th>
         <th>Devolver</th>
     </tr>";
@@ -51,7 +50,6 @@ while ($rowSelect = mysqli_fetch_assoc($consultaSelect)) {
                 <td><?php echo $rowSelect['nome']; ?></td>
                 <td><?php echo $rowSelect['descricao']; ?></td>
                 <td><?php echo $rowSelect['categoria']; ?></td>
-                <td><input type="hidden" name="estoque" value="<?php echo $rowSelect['estoque']; ?>"><?php echo $estoqueSelect; ?></td>
                 <td><input type="hidden" name="emprestados" value="<?php echo $rowSelect['emprestados']; ?>"><?php echo $emprestadosSelect; ?></td>
                 <td><input type="submit" <?php echo $rowSelect['id'] ?> value="DEVOLVER" id="botao-emprestar" name="update"><a href="../pages/devolve-item.php"></td>
             </tr>
