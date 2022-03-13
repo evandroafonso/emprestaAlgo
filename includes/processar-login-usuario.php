@@ -3,9 +3,10 @@
 $email = $_POST['email'];
 $senha = $_POST['senha'];
 
-include("../conexaodatabase/conexaodatabase.php");
+require("../emprestaAlgo/conexaodatabase/conexaodatabase.php");
 
 $sql = "SELECT * FROM cadastro WHERE email = '$email' AND senha = '$senha'";
+
 $resposta = mysqli_query($conexao, $sql);
 
 $qtdeRegistros = mysqli_num_rows($resposta);

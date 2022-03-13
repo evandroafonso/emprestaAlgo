@@ -1,7 +1,7 @@
 <?php
 include("../includes/topo.php");
 require("../includes/autentica-usuario.php");
-include("../conexaodatabase/conexaodatabase.php");
+include("../emprestaAlgo/conexaodatabase/conexaodatabase.php");
 ?>
 <section class="container-main">
 
@@ -23,7 +23,7 @@ include("../conexaodatabase/conexaodatabase.php");
 
 <?php
 
-include("../conexaodatabase/conexaodatabase.php");
+include("../emprestaAlgo/conexaodatabase/conexaodatabase.php");
 echo "
 <table>
     <tr>

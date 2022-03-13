@@ -1,6 +1,6 @@
 <?php
 
-include("../conexaodatabase/conexaodatabase.php");
+include("../emprestaalgo/conexaodatabase/conexaodatabase.php");
 include("../pages/atualiza-cadastro-usuario.php");
 
 if (isset($_POST['update'])) {

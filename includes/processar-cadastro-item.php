@@ -6,7 +6,7 @@ $categoria = $_POST['categoria'];
 $estoque = $_POST['estoque'];
 $idUsuario = $_POST['idUsuario'];
 
-include("../conexaodatabase/conexaodatabase.php");
+include("../emprestaalgo/conexaodatabase/conexaodatabase.php");
 
 $sql = "INSERT INTO item (nome, descricao, categoria, idUsuario, estoque) VALUES ('$nome', '$descricao', '$categoria', '$idUsuario', '$estoque')";
 

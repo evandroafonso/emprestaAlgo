@@ -1,7 +1,7 @@
 <?php
 include("../includes/topo.php");
 require("../includes/autentica-usuario.php");
-include("../conexaodatabase/conexaodatabase.php");
+include("../emprestaalgo/conexaodatabase/conexaodatabase.php");
 ?>
 
 <a href="../pages/principal.php" class="voltar-empresta-devolve">Voltar para a página principal</a>
