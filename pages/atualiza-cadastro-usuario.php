@@ -1,5 +1,5 @@
 <?php
-include("../conexaodatabase/conexaodatabase.php");
+include("../emprestaalgo/conexaodatabase/conexaodatabase.php");
 require("../includes/autentica-usuario.php");
 include("../includes/topo.php");
 

@@ -1,6 +1,6 @@
 <?php
 include("../includes/topo.php");
-include("../conexaodatabase/conexaodatabase.php");
+include("../emprestaalgo/conexaodatabase/conexaodatabase.php");
 ?>
 
 <div id="corpo-cadastro">

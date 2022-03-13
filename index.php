@@ -24,10 +24,8 @@
     <br />
     <h1>
         <background-color:></background-color:>
-        <a id="botao-entrar" href="../frontend/pages/login-usuario.php"> Clique aqui e faça seu login</a>
+        <a id="botao-entrar" href="../pages/login-usuario.php"> Clique aqui e faça seu login</a>
     </h1>
-
-
 
 
 </body>

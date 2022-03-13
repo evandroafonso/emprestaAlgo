@@ -1,6 +1,6 @@
 <?php
 
-include("../conexaodatabase/conexaodatabase.php");
+include("../emprestaalgo/conexaodatabase/conexaodatabase.php");
 include("../pages/empresta-item.php");
 
 if (isset($_POST['update'])) {
