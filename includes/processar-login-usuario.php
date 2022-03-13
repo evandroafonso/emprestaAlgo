@@ -3,7 +3,7 @@
 $email = $_POST['email'];
 $senha = $_POST['senha'];
 
-require("../emprestaAlgo/conexaodatabase/conexaodatabase.php");
+include("../emprestaAlgo/conexaodatabase/conexaodatabase.php");
 
 $sql = "SELECT * FROM cadastro WHERE email = '$email' AND senha = '$senha'";
 
